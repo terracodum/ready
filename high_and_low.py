@@ -8,5 +8,5 @@ def high_and_low(numbers):
     num_list.extend([numbers])
     num_list = list(map(int, num_list))
     num1 = str(max(num_list))
-    num2 = str(min(num_list , default= 0))
+    num2 = str(min(num_list, default=0))
     return num1 + " " + num2
