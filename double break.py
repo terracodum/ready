@@ -1,19 +1,13 @@
-letters = "ВАЛЕРИЯ"
-letters = sorted(letters)
-exitflag = False
-result = ""
-counter = 0
-for a in letters:
-    for b in letters:
-        for c in letters:
-            result = a + b + c
-            if result.count("В")==1:
-                counter+=1
-                if result.count("А")==0:
-                    exitflag = True
-                    break
-        if exitflag:
-            break
-    if exitflag:
-        break
-print(counter, result)
+numb = []
+def solution(number):
+    for i in range(1,number):
+        if (i % 3)==0 and (i%5)== 0:
+            numb.append(i)
+        elif i%3 ==0:
+            numb.append(i)
+        elif i%5 ==0:
+            numb.append(i)
+            print(numb)
+    num_sum = sum(numb)
+    return num_sum
+print(solution(16))
