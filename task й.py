@@ -1,16 +1,18 @@
-letters = "ЛЕВИЙ"
-letters = sorted(letters)
-result = ""
 counter = 0
-exitflag = False
-for a in letters:
-    for b in letters:
-        for c in letters:
-            for d in letters:
-                for e in letters:
-                    # for f in letters:
-                    result = a + b + c + d + e
-                    if result[0]!="Й" and result.count("Л")==1 and result.count("Е")==1 and result.count("В")==1 \
-                        and result.count("И")==1 and result.count("Й")==1 and result.count("ЕИ")==0:
-                        counter +=1
-print(counter) 
+even = [2, 4, 6, 8, 0]
+for i in range(1000,10000):
+    stri = str(i)
+    flag = True
+    for j in range(0, 4):
+        if int(stri[j]) in even:
+            flag = False
+    num1 = int(stri[0]) + int(stri[1])
+    num2 = int(stri[2]) + int(stri[3])
+    array = [num1, num2]
+    array = sorted(array)
+    array = map(str,array)
+    result = "".join(array)
+    if result =="414" and flag:
+        counter +=1
+        print(i)
+print(counter)

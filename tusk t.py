@@ -1,28 +1,11 @@
-letters = "СВЕТ"
-letters = sorted(letters)
-result = ""
-counter = 0
-exitflag = False
-for a in letters:
-    for b in letters:
-        for c in letters:
-            for d in letters:
-                for e in letters:
-                    for f in letters:
-                        result = a + b + c + d + e + f
-                        counter += 1
-                        if result[0] == "Т":
-                            print(counter, result)
-
-                            exitflag = True
-                            break
-                    if exitflag:
-                        break
-                if exitflag:
-                    break
-            if exitflag:
-                break
-        if exitflag:
-            break
-    if exitflag:
-        break
+def f(n):
+    if n ==1:
+        return 1
+    if n >1:
+        return (2*g(n-1)) + 5*n
+def g(n):
+    if n ==1:
+        return 1
+    if n>1:
+        return f(n-1)+2*n
+print(f(4)+g(4))
