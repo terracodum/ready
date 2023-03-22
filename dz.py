@@ -7,4 +7,4 @@ for i in range(201,1000):
     lat = string.count("1")
     long.append(lat)
     if string.count("1")==4:
-        print(s)
+        print(i)

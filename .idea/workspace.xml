@@ -21,10 +21,8 @@
   <component name="ChangeListManager">
     <list default="true" id="d59d6370-3507-4de5-ba2e-23ae1f06811c" name="Default Changelist" comment="dodo">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/double break.py" beforeDir="false" afterPath="$PROJECT_DIR$/double break.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dz.py" beforeDir="false" afterPath="$PROJECT_DIR$/dz.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/task й.py" beforeDir="false" afterPath="$PROJECT_DIR$/task й.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tusk t.py" beforeDir="false" afterPath="$PROJECT_DIR$/tusk t.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gg.py" beforeDir="false" afterPath="$PROJECT_DIR$/gg.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,7 +42,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="settings.editor.selected.configurable" value="org.jetbrains.plugins.github.ui.GithubSettingsConfigurable" />
   </component>
-  <component name="RunManager" selected="Python.task й">
+  <component name="RunManager" selected="Python.gg">
     <configuration name="double break" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="ready" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -87,7 +85,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="high_and_low" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="gg" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="ready" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -99,7 +97,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/high_and_low.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/gg.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -152,11 +150,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.gg" />
+        <item itemvalue="Python.dz" />
         <item itemvalue="Python.task й" />
         <item itemvalue="Python.double break" />
         <item itemvalue="Python.tusk t" />
-        <item itemvalue="Python.dz" />
-        <item itemvalue="Python.high_and_low" />
       </list>
     </recent_temporary>
   </component>
@@ -229,22 +227,22 @@
     <option name="LAST_COMMIT_MESSAGE" value="dodo" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1899" height="311" key="GridCell.Tab.0.bottom" timestamp="1679211682634">
+    <state width="1899" height="311" key="GridCell.Tab.0.bottom" timestamp="1679493949464">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="311" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1679211682634" />
-    <state width="1899" height="311" key="GridCell.Tab.0.center" timestamp="1679211682633">
+    <state width="1899" height="311" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1679493949464" />
+    <state width="1899" height="311" key="GridCell.Tab.0.center" timestamp="1679493949463">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="311" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1679211682633" />
-    <state width="1899" height="311" key="GridCell.Tab.0.left" timestamp="1679211682633">
+    <state width="1899" height="311" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1679493949463" />
+    <state width="1899" height="311" key="GridCell.Tab.0.left" timestamp="1679493949463">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="311" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1679211682633" />
-    <state width="1899" height="311" key="GridCell.Tab.0.right" timestamp="1679211682634">
+    <state width="1899" height="311" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1679493949463" />
+    <state width="1899" height="311" key="GridCell.Tab.0.right" timestamp="1679493949463">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="311" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1679211682634" />
+    <state width="1899" height="311" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1679493949463" />
     <state x="461" y="165" key="SettingsEditor" timestamp="1678890855708">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
