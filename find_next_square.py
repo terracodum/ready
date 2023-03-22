@@ -14,4 +14,3 @@ def find_next_square(sq):
         return num*num
     else:
         return -1
-print(find_next_square(225))
