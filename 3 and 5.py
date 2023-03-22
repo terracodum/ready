@@ -11,4 +11,3 @@ def solution(number):
             continue
     num_sum = sum(numb)
     return num_sum
-print( solution(200))
