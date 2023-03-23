@@ -21,7 +21,7 @@
   <component name="ChangeListManager">
     <list default="true" id="d59d6370-3507-4de5-ba2e-23ae1f06811c" name="Default Changelist" comment="dodo">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bus.py" beforeDir="false" afterPath="$PROJECT_DIR$/bus.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task й.py" beforeDir="false" afterPath="$PROJECT_DIR$/task й.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,7 +48,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="settings.editor.selected.configurable" value="org.jetbrains.plugins.github.ui.GithubSettingsConfigurable" />
   </component>
-  <component name="RunManager" selected="Python.bus">
+  <component name="RunManager" selected="Python.task й">
     <configuration name="bus" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="ready" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -156,10 +156,10 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.task й" />
         <item itemvalue="Python.bus" />
         <item itemvalue="Python.gg" />
         <item itemvalue="Python.dz" />
-        <item itemvalue="Python.task й" />
         <item itemvalue="Python.double break" />
       </list>
     </recent_temporary>
@@ -224,7 +224,14 @@
       <option name="project" value="LOCAL" />
       <updated>1679497043712</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="dodo">
+      <created>1679500830811</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1679500830811</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -247,22 +254,22 @@
     <option name="LAST_COMMIT_MESSAGE" value="dodo" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1899" height="311" key="GridCell.Tab.0.bottom" timestamp="1679498290939">
+    <state width="1899" height="315" key="GridCell.Tab.0.bottom" timestamp="1679575199029">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="311" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1679498290939" />
-    <state width="1899" height="311" key="GridCell.Tab.0.center" timestamp="1679498290939">
+    <state width="1899" height="315" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1679575199029" />
+    <state width="1899" height="315" key="GridCell.Tab.0.center" timestamp="1679575199029">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="311" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1679498290939" />
-    <state width="1899" height="311" key="GridCell.Tab.0.left" timestamp="1679498290939">
+    <state width="1899" height="315" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1679575199029" />
+    <state width="1899" height="315" key="GridCell.Tab.0.left" timestamp="1679575199029">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="311" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1679498290939" />
-    <state width="1899" height="311" key="GridCell.Tab.0.right" timestamp="1679498290939">
+    <state width="1899" height="315" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1679575199029" />
+    <state width="1899" height="315" key="GridCell.Tab.0.right" timestamp="1679575199029">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="311" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1679498290939" />
+    <state width="1899" height="315" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1679575199029" />
     <state x="461" y="165" key="SettingsEditor" timestamp="1678890855708">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
