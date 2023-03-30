@@ -12,4 +12,3 @@ def expanded_form(num):
     result.reverse()
     res = "".join(result)
     return res[3::]
-print(expanded_form(70304))

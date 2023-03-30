@@ -23,10 +23,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d59d6370-3507-4de5-ba2e-23ae1f06811c" name="Default Changelist" comment="dodo">
-      <change afterPath="$PROJECT_DIR$/exl.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rer.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ыуе.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dz.py" beforeDir="false" afterPath="$PROJECT_DIR$/dz.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tusk t.py" beforeDir="false" afterPath="$PROJECT_DIR$/tusk t.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/exl.py" beforeDir="false" afterPath="$PROJECT_DIR$/exl.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/expanded_form.py" beforeDir="false" afterPath="$PROJECT_DIR$/expanded_form.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,18 +45,25 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
   <component name="ProjectId" id="2N3QTMIp030ZT8AWUn3ho05kRkR" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">
-    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
-  </component>
-  <component name="RunManager" selected="Python.tusk t">
-    <configuration name="bus" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "last_opened_file_path": "C:/Users/nikit/Downloads/CodeSnap.dev-0.0.3.zip",
+    "settings.editor.selected.configurable": "preferences.pluginManager"
+  }
+}]]></component>
+  <component name="RunManager" selected="Python.expanded_form">
+    <configuration name="ыуе" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="ready" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -66,7 +75,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/bus.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ыуе.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -117,7 +126,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="task й" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="expanded_form" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="ready" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -129,7 +138,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/task й.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/expanded_form.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -138,7 +147,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="tusk t" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="rer" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="ready" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -150,7 +159,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/tusk t.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/rer.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -161,11 +170,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.tusk t" />
+        <item itemvalue="Python.expanded_form" />
         <item itemvalue="Python.exl" />
+        <item itemvalue="Python.ыуе" />
+        <item itemvalue="Python.rer" />
         <item itemvalue="Python.dz" />
-        <item itemvalue="Python.task й" />
-        <item itemvalue="Python.bus" />
       </list>
     </recent_temporary>
   </component>
@@ -264,39 +273,5 @@
     <MESSAGE value="Update and rename test.py to high_and_low.py" />
     <MESSAGE value="dodo" />
     <option name="LAST_COMMIT_MESSAGE" value="dodo" />
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="813" y="243" key="FileChooserDialogImpl" timestamp="1680077839520">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="813" y="243" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1680077839520" />
-    <state width="1899" height="315" key="GridCell.Tab.0.bottom" timestamp="1680078270839">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1899" height="315" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1680078270839" />
-    <state width="1899" height="315" key="GridCell.Tab.0.center" timestamp="1680078270838">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1899" height="315" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1680078270838" />
-    <state width="1899" height="315" key="GridCell.Tab.0.left" timestamp="1680078270838">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1899" height="315" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1680078270838" />
-    <state width="1899" height="315" key="GridCell.Tab.0.right" timestamp="1680078270839">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1899" height="315" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1680078270839" />
-    <state x="534" y="147" key="SettingsEditor" timestamp="1680077863227">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="534" y="147" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1680077863227" />
-    <state x="846" y="434" key="VCS.EditChangelistDialog" timestamp="1678968302938">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="846" y="434" key="VCS.EditChangelistDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1678968302938" />
-    <state x="769" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1678891485837">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="769" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040@0.0.1920.1040" timestamp="1678891485837" />
   </component>
 </project>
