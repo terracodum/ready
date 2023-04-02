@@ -1,9 +1,3 @@
-def f(n,m):
-    if n == 12 or n==11:
-        return 0
-    if n ==m:
-        return 1
-    if n >= m:
-        return 0
-    return f(n+1,m) + f(n+2,m) +f(n*3,m)
-print(f(1,9)*f(9,30))
+x = [5,7,3,6,8,0,3,4,7,9,0,2]
+y = [9,6,3,6,8,3,6,8,4,5,7,4]
+print(list(map(lambda s : 'a' if s%10 > 5 else 'b', [x[i]+y[i] for i in range(len(x))])))
