@@ -6,9 +6,4 @@
 # if __name__ == "__main__":
 #     main()
 # print(__name__)
-import random
-
-
-def create_phone_number(n):
-    return "(" + str(random.)
 
