@@ -139,3 +139,223 @@
 #     num2 = int("1"+x+"233",15)
 #     if (num1 + num2)%14==0:
 #         print((num1+num2)/14)
+############################################## 06.04.23 #####################################
+##  №1
+# num = 7*(512**1912)+6*(64**1954)-5*(8**1991)-4*(8**1980)-2022
+# num = str(oct(num))
+# print(num.count("7"))
+##  №2
+# lit = "0123456789ABCDEFGHI"
+# print(len(lit))
+# for x in lit:
+#     num1 = int("321" + x + "4",19)
+#     num2 = int("498" + x + "9",19)
+#     num = num1 + num2
+#     if num%23==0:
+#         print(num / 23)
+##  №3
+# lit = "0123456789ABCD"
+# for x in lit:
+#     N = int("8"+x+"542",14)
+#     M = int("8" + x + "12"+x,14)
+#     for A in range(1,10000):
+#         if( M + A )% N==0:
+#             print(A)
+# ##  №4
+# lar = "0123456789"
+# for x in lar :
+#     num1 = int(x+"A04",13)
+#     num2 = int("1D"+x+"3",18)
+#     if (num1+num2)%184==0:
+#         print((num1+num2)/184)
+##  №5
+# lit = "0123456789A"
+# for x in lit:
+#     for y in lit:
+#         num1 = int(x+"341"+y,11)
+#         num2 = int("56"+x+"1"+y,19)
+#         if (num1+num2)%305==0:
+#             print((num1+num2)/305)
+##  №6
+# lit = "01234567"
+# for x in lit:
+#     for y in lit:
+#         num1 = int(y+"04"+x+"5",11)
+#         num2 = int("253"+x+y,8)
+#         if (num1+num2)%117==0:
+#             print((num1+num2)/117)
+##  №7
+# with open("X:\\Github\\some_files\\9,4\\7.txt") as file:
+#     array = [int(i) for i in file]
+# maxsumm= 0
+# counter = 0
+# for i in range(len(array)):
+#     for j in range(i+1,len(array)):
+#
+#         if (array[i]+array[j])%7==0:
+#             counter +=1
+#             summ = array[i]+array[j]
+#             maxsumm=max(maxsumm,summ)
+# print(counter,maxsumm)
+##  №8
+# with open("X:\\Github\\some_files\\9,4\\8.txt") as file:
+#     array = [int(i) for i in file]
+# counters = 0
+# summm=0
+# for j in array:
+#     if j%2==0:
+#         counters+=1
+#         summm +=j
+# sum4 = summm/counters
+# maxsumm = 0
+# counter = 0
+# for i in range(len(array)-1):
+#     if (array[i]%3==0 and array[i+1]<sum4) or (array[i]<sum4 and  array[i+1]%3==0):
+#         counter +=1
+#         summ = array[i]+array[i+1]
+#         maxsumm = max(maxsumm,summ)
+# print(counter,maxsumm)
+##  №9
+# with open("X:\\Github\\some_files\\9,4\\9.txt") as file:
+#     array = [int(i) for i in file]
+# counter =0
+# maxsumm = 0
+# for i in range(len(array) - 3):
+#         ars = sorted([array[i],array[i+1],array[i+2]])
+#         if ars[2]**2 < ((ars[1]**2)+(ars[0]**2)):
+#             counter +=1
+#             maxsumm = max(maxsumm,(ars[0]+ars[1]+ars[2]))
+# print(counter,maxsumm)
+##  №10
+# with open("X:\\Github\\some_files\\9,4\\10.txt") as file:
+#     array = [int(i) for i in file]
+# counter =0
+# maxsumm = 0
+# for i in range(len(array) - 3):
+#         ars = sorted([array[i],array[i+1],array[i+2]])
+#         if ars[2]**2 == ((ars[1]**2)+(ars[0]**2)):
+#             counter +=1
+#             maxsumm = max(maxsumm,(ars[0]+ars[1]+ars[2]))
+# print(counter,maxsumm)
+##  №11
+# with open("X:\\Github\\some_files\\9,4\\11.txt") as file:
+#     array =[int(i) for i in file]
+# counters = 0
+# summm=0
+# for j in array:
+#     if j%2==0:
+#         counters+=1
+#         summm +=j
+# sum4 = summm/counters
+# maxsumm = 0
+# counter = 0
+# for i in range(len(array)-1):
+#     if (array[i]%3==0 or array[i+1]%3==0) and (array[i]<sum4 or array[i+1]<sum4 ):
+#         counter +=1
+#         summ = array[i]+array[i+1]
+#         maxsumm = max(maxsumm,summ)
+# print(counter,maxsumm)
+##  №12
+# with open("X:\\Github\\some_files\\9,4\\12.txt") as file:
+#     array =[int(i) for i in file]
+# sum = []
+# for j in array:
+#     if j%21==0:
+#         sum.append(j)
+# counter = 0
+# maxsum =0
+# minel = min(sum)
+# for i in range(len(array)-1):
+#     if array[i]%minel==0 or array[i+1]%minel==0:
+#         counter+=1
+#         maxsum = max(maxsum,array[i]+array[i+1])
+# print(counter,maxsum)
+############################## 09.04.23#############################
+##  №1
+# with open("X:\\Github\\some_files\\10,4\\1.txt") as file:
+#     array = file.read()
+# diktr = {}
+# for i in range(len(array)):
+#     if array[i] =="E":
+#         if array[i+1] in diktr:
+#             diktr[array[i+1]] +=1
+#         else:
+#             diktr[array[i+1]] =1
+# print(diktr)
+# print(max(diktr.values()))
+##  №2
+# with open("X:\\Github\\some_files\\10,4\\2.txt") as file:
+#     array = [i.rstrip() for i in file]
+# counter = 0
+# for i in array:
+#     if i.count("A") > i.count("E"):
+#         counter += 1
+# print(counter)
+##  №3
+# with open("X:\\Github\\some_files\\10,4\\3.txt") as file:
+#     array = file.read()
+# sim = 1
+# maxsim = 0
+# for i in range(len(array)-1):
+#     if array[i] == "L" and array[i+1]== "L":
+#         sim +=1
+#     else:
+#         maxsim = max(maxsim,sim)
+#         sim = 1
+# print(maxsim)
+##  №4
+# with open("X:\\Github\\some_files\\10,4\\4.txt") as file:
+#     array = file.read()
+# counter = 0
+# maxcount = 0
+# if array[0] == "X":
+#     counter =1
+# for i in range(1, len(array)):
+#     if (array[i] == "X" and array[i-1] == "Z") or (array[i] == "Y" and array[i-1] == "X") or (array[i] == "Z" and array[i-1] == "Y"):
+#         counter +=1
+#     elif array[i] == "X" and array[i-1] != 'Z':
+#         maxcount = max(maxcount, counter)
+#         counter = 1
+#     else:
+#         maxcount = max(maxcount,counter)
+#         counter = 0
+# print(maxcount)
+##  №5
+# with open("X:\\Github\\some_files\\10,4\\5.txt") as file:
+#     array = [i.rstrip() for i in file]
+# maxlongstr = 0
+# for string in array:
+#     if string.count("G")<25:
+#         strset = set(string)
+#         for letter in strset:
+#             mins = string.find(letter)
+#             maxs = string.rfind(letter)
+#             long = maxs - mins
+#             maxlongstr = max(maxlongstr,long)
+# print(maxlongstr)
+##  №6
+# with open("X:\\Github\\some_files\\10,4\\6.txt") as file:
+#     array = file.read()
+# maxlong = 0
+# array = array.replace("da","ad")
+# array = array.split("ad")
+# for i in range(len(array)):
+#     print(len(array))
+#     if i ==0:
+#         long = len(array[i]) + 1
+#     elif i == 392:
+#         long = len(array[i]) + 1
+#     else:
+#         long = len(array[i]) + 2
+#     maxlong = max(maxlong,long)
+# print(maxlong)
+##  №7
+# with open("X:\\Github\\some_files\\10,4\\7.txt") as file:
+#     array = file.read()
+# maxlong = 0
+# array = array.split("A")
+# for i in range(len(array)-1):
+#     long = len(array[i])+len(array[i+1])+1
+#     maxlong = max(maxlong,long)
+# print(maxlong)
+##  №8
