@@ -358,4 +358,172 @@
 #     long = len(array[i])+len(array[i+1])+1
 #     maxlong = max(maxlong,long)
 # print(maxlong)
-##  №8
+####################################### 13.04.23 #####################
+##  №1
+# with open("X:\\Github\\some_files\\13,04\\1.txt") as file:
+#     array = [int(i) for i in file]
+# counter = 0
+# sum4 = 0
+# for i in range(len(array)):
+#     if array[i] %2 ==0:
+#         counter +=1
+#         sum4 += array[i]
+# sum4 = sum4/counter
+# count = 0
+# summ = 0
+# for i in range(len(array)-1):
+#     if (array[i]%3==0 or array[i+1]%3==0) and (array[i]<sum4 or array[i+1]<sum4):
+#         count+=1
+#         summ = max(summ, array[i] + array[i+1])
+# print(count,summ)
+##  №2
+# with open("X:\\Github\\some_files\\13,04\\2.txt") as file:
+#     array = [int(i) for i in file]
+# counter =summ = 0
+# for i in range(len(array)):
+#     for j in range(i+1,len(array)):
+#         if array[i]*array[j] %34 !=0:
+#             counter+=1
+#             summ = max(summ,array[i]+array[j])
+# print(counter,summ)
+# #  №3
+# with open("X:\\Github\\some_files\\13,04\\3.txt") as file:
+#     array = file.read()
+# sog = "CDF"
+# glas = "AO"
+# count = 0
+# maxlen = 0
+# i = 0
+# while i <= len(array)-2:
+#     if (array[i] in sog) and (array[i+1] in sog) and (array[i+2] in glas):
+#         count +=1
+#         i += 3
+#     else :
+#         i+=1
+#         count=0
+#     maxlen = max(maxlen, count)
+# print(maxlen)
+##  №4
+# with open("C:\\Users\\nikit\\Downloads\\244.txt") as file:
+#     array = file.read()
+# array = array.split("A")
+# print(array)
+# array.pop(0)
+# array.pop(-1)
+# counter = 0
+# for i in range(len(array)):
+#     if len(array[i])>=8:
+#         if "B" not in array[i]:
+#             counter+=1
+# print(counter)
+##  №5
+# with open("X:\\Github\\some_files\\13,04\\5.txt") as file:
+#     array = file.read()
+# count = 0
+# maxlen = 0
+# i = 0
+# while i<=len(array)-1:
+#     if (array[i]=='A' and array[i+1]=='B') or (array[i]=='C' and array[i+1]=='B'):
+#         count+=1
+#         i+=2
+#     else:
+#         count=0
+#         i+=1
+#     maxlen =max(maxlen,count)
+# print(maxlen)
+##  №6
+# with open("X:\\Github\\some_files\\13,04\\6.txt") as file:
+#     array = file.read()
+# array = array.split("E")
+# maxlen = 0
+# for i in range(len(array)):
+#     if array[i].count("A")>=3:
+#         res = len(array[i])
+#         maxlen = max(maxlen,res)
+# print(maxlen)
+##  №7
+# with open("X:\\Github\\some_files\\13,04\\7.txt") as file:
+#     array = file.read()
+# array = array.replace("KL","LK")
+# array = array.split("LK")
+# maxlen =0
+# for i in range(len(array)):
+#     lens = len(array[i])+2
+#     maxlen = max(maxlen,lens)
+# print(maxlen)
+## №8
+# with open("X:\\Github\\some_files\\13,04\\8.txt") as file:
+#     array = [i.rstrip() for i in file]
+# maxstring = 0
+# for string in array:
+#     if string.count("A")<25:
+#         for letters in set(string):
+#             mins = string.find(letters)
+#             maxs = string.rfind(letters)
+#             long = maxs - mins
+#             maxstring  = max(maxstring,long)
+# print(maxstring)
+##  №9
+# with open("X:\\Github\\some_files\\13,04\\9.txt") as file:
+#     array = [i.rstrip() for i in file]
+# dictr = {}
+# list = []
+# for i in range(len(array)):
+#     dictr.setdefault(i, array[i].count("G"))
+# print(dictr)
+# ming = 10000000000
+# for i in dictr:
+#     ming = min(ming,dictr[i])
+# print(ming)
+# for i in dictr:
+#     if dictr[i] == ming:
+#         list.append(i)
+# mig = list[0]
+# string = array[mig]
+# letters = {}
+# for i in range(len(string)):
+#     if string[i] in letters:
+#         letters[string[i]] +=1
+#     else:
+#         letters[string[i]] = 1
+#     let = letters.values()
+# print(let)
+# print(letters.keys())
+##  №10
+# with open("X:\\Github\\some_files\\13,04\\10.txt") as file:
+#     array = file.read()
+# letters = {}
+# for i in range(len(array)-1):
+#     if array[i-1] == array[i+1]:
+#         if array[i] in letters:
+#             letters[array[i]] +=1
+#         else:
+#             letters[array[i]] = 1
+#     let = letters.values()
+# print(let)
+# print(letters.keys())
+##  №11
+# with open("X:\\Github\\some_files\\13,04\\11.txt") as file:
+#     array = file.read()
+# counter = 0
+# maxcount = 0
+# if array[0] == "L":
+#     counter = 1
+# for i in range(len(array)):
+#     if (array[i] == 'D' and array[i-1]=="L") or (array[i] == "R" and array[i-1]=="D") or (array[i] == "L" and array[i-1]=="R"):
+#         counter+=1
+#     elif array[i]=="L" and array[i-1]!="R":
+#         maxcount = max(maxcount,counter)
+#         counter=1
+#     else:
+#         maxcount = max(maxcount,counter)
+#         counter = 0
+# print(maxcount)
+##  №12
+with open("X:\\Github\\some_files\\13,04\\12.txt") as file:
+    array = file.read()
+les = ""
+for i in range(len(array)):
+    if array[i]=="E":
+        les = les.join(array[i+1])
+
