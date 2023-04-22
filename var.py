@@ -43,11 +43,127 @@
 #         return f(x + 1, y) + f(x + 2, y) + f(x + 4, y)
 # print(f(1, 8) * f(8, 15))
 #############################
-for a in range(100, 0, -1):
-    k = 0
-    for x in range(1, 1000):
-        if (a < 50) and ((x % a != 0) <= ((x % 10 == 0) <= (x % 12 != 0))):
-            k += 1
-    if k == 999:
-        print(a)
-        break
+# for a in range(100, 0, -1):
+#     k = 0
+#     for x in range(1, 1000):
+#         if (a < 50) and ((x % a != 0) <= ((x % 10 == 0) <= (x % 12 != 0))):
+#             k += 1
+#     if k == 999:
+#         print(a)
+#         break
+############################################ 16.04.23 ###############################################
+##  №2
+# print("x y z w")
+# let = [0,1]
+# for x in let:
+#     for y in let:
+#         for z in let:
+#             for w in let:
+#                 F = (not((not(z) or w) and (not(x) == y)) or (x and z))
+#                 if F == 0:
+#                     print(x, y, z, w)
+##  №5
+# for n in range(10000):
+#     m = n
+#     b = ''
+#     while n > 0:
+#         b = str(n % 3) + b
+#         n = n // 3
+#     b = b + str(m%3)
+#     res = int(b,3)
+#     if len(str(res))==4:
+#         print(res)
+##  №8
+# let = "ВИШНЯ"
+# counter = 0
+# for a in let:
+#     for b in let:
+#         for c in let:
+#             for d in let:
+#                 for e in let:
+#                     for f in let:
+#                         sen = a + b + c + d + e + f
+#                         if sen[0]!= "Ш" and sen[-1]!="И" and sen[-1]!="Я" and sen.count("В")<=1:
+#                             counter +=1
+# print(counter)
+##  №12
+# let = "1"+("9"*100)
+# while ("19" in let) or ("299" in let) or ("3999" in let):
+#     let = let.replace("19","2",1)
+#     let = let.replace("299","3",1)
+#     let = let.replace("3999","1",1)
+# print(let)
+##  №14
+# num = (9**12) + (3**8) - 3
+# m = num
+# b = ''
+# while num > 0:
+#     b = str(num % 3) + b
+#     num = num // 3
+# print(b.count("2"))
+##  №15
+
+# for A in range(300, -1, -1):
+#     k = 0
+#     for x in range(1, 301):
+#         for y in range(1, 301):
+#             if (x * y < 140) or (y > A) or (x > A):
+#                 k += 1
+#     if k == 90000:
+#         print(A)
+#         break
+##  #16
+# def f(n):
+#     if n ==1:
+#         return 3
+#     if n == 2:
+#         return 3
+#     if n >2:
+#         return 5*(f(n-1)) - 4*(f(n-2))
+# print(f(15))
+##  #17
+# with open("C:\\Users\\nikit\\Downloads\\12312.txt") as file:
+#     array = [int(i) for i in file]
+# maxar = 0
+# for i in array:
+#     if i %10 == 3:
+#         maxar = max(maxar,i)
+# counter = 0
+# maxsum = -111111111111111111111111111111
+# for i in range(len(array)-1):
+#     if ((str(array[i])[-1]=="3") and (str(array[i+1])[-1]!="3")) or ((str(array[i])[-1]!="3") and (str(array[i+1])[-1]=="3")):
+#         if (array[i]**2) + (array[i+1]**2) >= maxar**2:
+#             maxsum = max(maxsum,(array[i]**2)+(array[i+1]**2))
+#             counter+=1
+# print(counter,maxsum)
+## # 24
+# with open("C:\\Users\\nikit\\Downloads\\24.txt") as file:
+#     array = file.read()
+# array = array.split("A")
+# print(array)
+# array.pop(0)
+# array.pop(-1)
+# counter = 0
+# for i in range(len(array)):
+#     if len(array[i])>=8:
+#         if "B" not in array[i]:
+#             counter+=1
+# print(counter)
+##  №18
+# with open("X:\\Github\\some_files\\80.csv") as file:
+#
+#     array = [float(i.rstrip().replace(",",".")) for i in file]
+# maxsum = -100000000000000000000000
+# curent = 0
+# for i in range(len(array)-1):
+#
+#     if abs(array[i]-array[i+1])<=10:
+#         curent += array[i]
+#         maxsum = max(maxsum,curent)
+#     else:
+#         curent += array[i]
+#         maxsum= max(maxsum,curent)
+#         curent=0
+#
+# print(maxsum)
+#
