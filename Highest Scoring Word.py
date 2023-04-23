@@ -1,4 +1,4 @@
-from  string import ascii_lowercase as letters
+from string import ascii_lowercase as letters
 def high(x):
     x = x.split(" ")
     scores = {}
@@ -11,3 +11,4 @@ def high(x):
     d = dict([max(scores.items(), key=lambda k_v: k_v[1])])
     for i in d:
         return i
+print(high('what time are we climbing up the volcano'))

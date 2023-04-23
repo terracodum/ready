@@ -25,6 +25,7 @@
     <list default="true" id="d59d6370-3507-4de5-ba2e-23ae1f06811c" name="Default Changelist" comment="dodo">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Highest Scoring Word.py" beforeDir="false" afterPath="$PROJECT_DIR$/Highest Scoring Word.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dz.py" beforeDir="false" afterPath="$PROJECT_DIR$/dz.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -168,8 +169,8 @@
       <list>
         <item itemvalue="Python.Highest Scoring Word" />
         <item itemvalue="Python.Range Extraction" />
-        <item itemvalue="Python.var" />
         <item itemvalue="Python.dz" />
+        <item itemvalue="Python.var" />
         <item itemvalue="Python.Domain_name" />
       </list>
     </recent_temporary>

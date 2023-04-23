@@ -520,10 +520,256 @@
 #         counter = 0
 # print(maxcount)
 ##  №12
-with open("X:\\Github\\some_files\\13,04\\12.txt") as file:
-    array = file.read()
-les = ""
-for i in range(len(array)):
-    if array[i]=="E":
-        les = les.join(array[i+1])
+# with open("X:\\Github\\some_files\\13,04\\12.txt") as file:
+#     array = file.read()
+# les = ""
+# for i in range(len(array)):
+#     if array[i]=="E":
+#         les = les.join(array[i+1])
 
+############################################### 23.04.23 ################################################################
+###  №1.1
+# def game(first, step):
+#     if first  >= 35 or step > 2:
+#         return step == 2
+#
+#     if step % 2 == 0:   # ход Вани
+#         return any([game(first + 1, step + 1), game(first+2, step + 1), game(first * 2, step + 1)])
+#     else:               # ход Пети
+#         return any([game(first + 1, step + 1), game(first+2, step + 1), game(first * 2, step + 1)])
+#
+# for i in range(1, 35):
+#     if game(i, 0):
+#         print(i, end=" ")
+###  №1.2
+# def game(first, step):
+#     if first  >= 35 or step > 3:
+#         return step == 3
+#
+#     if step % 2 == 0:   # ход Вани
+#         return any([game(first + 1, step + 1), game(first+2, step + 1), game(first * 2, step + 1)])
+#     else:               # ход Пети
+#         return all([game(first + 1, step + 1), game(first+2, step + 1), game(first * 2, step + 1)])
+#
+# for i in range(1, 35):
+#     if game(i, 0):
+#         print(i, end=" ")
+# ###  №1.3
+# def game(first, step):
+#     if first  >= 35 or step > 4:
+#         return step == 2 or step == 4
+#
+#     if step % 2 == 0:   # ход Вани
+#         return all([game(first + 1, step + 1), game(first+2, step + 1), game(first * 2, step + 1)])
+#     else:               # ход Пети
+#         return any([game(first + 1, step + 1), game(first+2, step + 1), game(first * 2, step + 1)])
+#
+# for i in range(1, 35):
+#     if game(i, 0):
+#         print(i, end=" ")
+# ###  №2.1
+# def game(first, second, step):
+#     if first + second >= 82 or step > 2:
+#         return step == 2
+#     if step % 2 == 0:   # ход Вани
+#         return any([game(first + 1, second, step + 1), game(first * 4, second, step + 1), \
+#                     game(first, second+1, step + 1), game(first, second*4, step + 1)])
+#     else:               # ход Пети
+#         return any([game(first + 1, second, step + 1), game(first * 4, second, step + 1), \
+#                     game(first, second+1, step + 1), game(first, second*4, step + 1)])
+#
+# for i in range(1, 82):
+#     if game(4, i, 0):
+#         print(i, end=" ")
+##  №2.2
+# def game(first, second, step):
+#     if first + second >= 82 or step > 3:
+#         return step == 3
+#     if step % 2 == 0:   # ход Вани
+#         return any([game(first + 1, second, step + 1), game(first * 4, second, step + 1), game(first, second+1, step + 1), game(first, second*4, step + 1)])
+#     else:               # ход Пети
+#         return all([game(first + 1, second, step + 1), game(first * 4, second, step + 1), game(first, second+1, step + 1), game(first, second*4, step + 1)])
+#
+# for i in range(1, 82):
+#     if game(4, i, 0):
+#         print(i, end=" ")
+###  №2.3
+# def game(first, second, step):
+#     if first + second >= 82 or step > 4:
+#         return step == 2 or step == 4
+#     if step % 2 == 0:   # ход Вани
+#         return all([game(first + 1, second, step + 1), game(first * 4, second, step + 1), game(first, second+1, step + 1), game(first, second*4, step + 1)])
+#     else:               # ход Пети
+#         return any([game(first + 1, second, step + 1), game(first * 4, second, step + 1), game(first, second+1, step + 1), game(first, second*4, step + 1)])
+#
+# for i in range(1, 82):
+#     if game(4, i, 0):
+#         print(i, end=" ")
+###  №3.1
+# def game(first, second, step):
+#     if first + second >= 69 or step > 2:
+#         return step == 2
+#     if step % 2 == 0:   # ход Вани
+#         return any([game(first + 1, second, step + 1), game(first * 2, second, step + 1), \
+#                     game(first, second+1, step + 1), game(first, second*3, step + 1)])
+#     else:               # ход Пети
+#         return any([game(first + 1, second, step + 1), game(first * 2, second, step + 1), \
+#                     game(first, second+1, step + 1), game(first, second*3, step + 1)])
+#
+# for i in range(1, 59):
+#     if game(10, i, 0):
+#         print(i, end=" ")
+###  №3.2
+# def game(first, second, step):
+#     if first + second >= 69 or step > 3:
+#         return step == 3
+#     if step % 2 == 0:   # ход Вани
+#         return any([game(first + 1, second, step + 1), game(first * 2, second, step + 1), \
+#                     game(first, second+1, step + 1), game(first, second*3, step + 1)])
+#     else:               # ход Пети
+#         return all([game(first + 1, second, step + 1), game(first * 2, second, step + 1), \
+#                     game(first, second+1, step + 1), game(first, second*3, step + 1)])
+#
+# for i in range(1, 59):
+#     if game(10, i, 0):
+#         print(i, end=" ")
+###  №3.3
+# def game(first, second, step):
+#     if first + second >= 69 or step > 4:
+#         return step == 2 or step == 4
+#     if step % 2 == 0:   # ход Вани
+#         return all([game(first + 1, second, step + 1), game(first * 2, second, step + 1), \
+#                     game(first, second+1, step + 1), game(first, second*3, step + 1)])
+#     else:               # ход Пети
+#         return any([game(first + 1, second, step + 1), game(first * 2, second, step + 1), \
+#                     game(first, second+1, step + 1), game(first, second*3, step + 1)])
+#
+# for i in range(1, 59):
+#     if game(10, i, 0):
+#         print(i, end=" ")
+###  №4.1
+# def game(first, second, step):
+#     if first + second <= 20 or step > 2:
+#         return step == 2
+#     if step % 2 == 0:   # ход Вани
+#         return any([game(first - 1, second, step + 1), game(first // 2, second, step + 1), \
+#                     game(first, second - 1, step + 1), game(first, second // 2, step + 1)])
+#     else:               # ход Пети
+#         return any([game(first - 1, second, step + 1), game(first // 2, second, step + 1), \
+#                     game(first, second - 1, step + 1), game(first, second // 2, step + 1)])
+#
+# for i in range(11, 100):
+#     if game(10, i, 0):
+#         print(i, end=" ")
+###  №4.2
+# def game(first, second, step):
+#     if first + second <= 20 or step > 3:
+#         return step == 3
+#     if step % 2 == 0:   # ход Вани
+#         return any([game(first - 1, second, step + 1), game(first // 2, second, step + 1), \
+#                     game(first, second - 1, step + 1), game(first, second // 2, step + 1)])
+#     else:               # ход Пети
+#         return all([game(first - 1, second, step + 1), game(first // 2, second, step + 1), \
+#                     game(first, second - 1, step + 1), game(first, second // 2, step + 1)])
+#
+# for i in range(11, 100):
+#     if game(10, i, 0):
+#         print(i, end=" ")
+###  №4.3
+# def game(first, second, step):
+#     if first + second <= 20 or step > 4:
+#         return step == 4 or step == 2
+#     if step % 2 == 0:   # ход Вани
+#         return all([game(first - 1, second, step + 1), game(first // 2, second, step + 1), \
+#                     game(first, second - 1, step + 1), game(first, second // 2, step + 1)])
+#     else:               # ход Пети
+#         return any([game(first - 1, second, step + 1), game(first // 2, second, step + 1), \
+#                     game(first, second - 1, step + 1), game(first, second // 2, step + 1)])
+#
+# for i in range(11, 100):
+#     if game(10, i, 0):
+#         print(i, end=" ")
+###  №5.1
+# def game(first, second, step):
+#     if first + second >= 75 or step > 2:
+#         return step == 2
+#     if step % 2 == 0:   # ход Вани
+#         return any([game(first + 1, second, step + 1), game(first + second, second, step + 1), \
+#                     game(first, second+1, step + 1), game(first, second+first, step + 1)])
+#     else:               # ход Пети
+#         return any([game(first + 1, second, step + 1), game(first +second, second, step + 1), \
+#                     game(first, second+1, step + 1), game(first, second+first, step + 1)])
+#
+# for i in range(1, 68):
+#     if game(7, i, 0):
+#         print(i, end=" ")
+###  №5.2
+# def game(first, second, step):
+#     if first + second >= 75 or step > 3:
+#         return step == 3
+#     if step % 2 == 0:   # ход Вани
+#         return any([game(first + 1, second, step + 1), game(first + second, second, step + 1), \
+#                     game(first, second+1, step + 1), game(first, second+first, step + 1)])
+#     else:               # ход Пети
+#         return all([game(first + 1, second, step + 1), game(first +second, second, step + 1), \
+#                     game(first, second+1, step + 1), game(first, second+first, step + 1)])
+#
+# for i in range(1, 68):
+#     if game(7, i, 0):
+#         print(i, end=" ")
+###  №5.3
+# def game(first, second, step):
+#     if first + second >= 75 or step > 4:
+#         return step == 2 or step ==4
+#     if step % 2 == 0:   # ход Вани
+#         return all([game(first + 1, second, step + 1), game(first + second, second, step + 1), \
+#                     game(first, second+1, step + 1), game(first, second+first, step + 1)])
+#     else:               # ход Пети
+#         return any([game(first + 1, second, step + 1), game(first +second, second, step + 1), \
+#                     game(first, second+1, step + 1), game(first, second+first, step + 1)])
+#
+# for i in range(1, 68):
+#     if game(7, i, 0):
+#         print(i, end=" ")
+###  №6.1
+# def game(first, second, step):
+#     if first + second >= 88 or step > 2:
+#         return step == 2
+#     if step % 2 == 0:   # ход Вани
+#         return any([game(first + 1, second, step + 1), game(first * 3, second, step + 1), \
+#                     game(first, second + 1, step + 1), game(first, second * 3, step + 1)])
+#     else:               # ход Пети
+#         return any([game(first + 1, second, step + 1), game(first * 3, second, step + 1), \
+#                     game(first, second + 1, step + 1), game(first, second * 3, step + 1)])
+#
+# for i in range(1, 71):
+#     if game(6, i, 0):
+#         print(i, end=" ")
+###  №6.2
+# def game(first, second, step):
+#     if first + second >= 88 or step > 3:
+#         return step == 3
+#     if step % 2 == 0:   # ход Вани
+#         return any([game(first + 1, second, step + 1), game(first * 3, second, step + 1), \
+#                     game(first, second + 1, step + 1), game(first, second * 3, step + 1)])
+#     else:               # ход Пети
+#         return all([game(first + 1, second, step + 1), game(first * 3, second, step + 1), \
+#                     game(first, second + 1, step + 1), game(first, second * 3, step + 1)])
+#
+# for i in range(1, 71):
+#     if game(6, i, 0):
+#         print(i, end=" ")
+###  №6.3
+# def game(first, second, step):
+#     if first + second >= 88 or step > 4:
+#         return step == 2 or step == 4
+#     if step % 2 == 0:   # ход Вани
+#         return all([game(first + 1, second, step + 1), game(first * 3, second, step + 1), \
+#                     game(first, second + 1, step + 1), game(first, second * 3, step + 1)])
+#     else:               # ход Пети
+#         return any([game(first + 1, second, step + 1), game(first * 3, second, step + 1), \
+#                     game(first, second + 1, step + 1), game(first, second * 3, step + 1)])
+#
+# for i in range(1, 71):
+#     if game(6, i, 0):
+#         print(i, end=" ")
