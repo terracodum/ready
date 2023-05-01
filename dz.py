@@ -773,3 +773,129 @@
 # for i in range(1, 71):
 #     if game(6, i, 0):
 #         print(i, end=" ")
+################################################ 27.04.23 #################################################
+### #1
+# def de(m,n):
+#     return m % n == 0
+# for a in range(1,500):
+#     flag = True
+#     for x in range(1,500):
+#         f = de(70,a) and (de(x,28) <= (de(x,a) or (not(de(x,21)))))
+#
+#         if f :
+#             flag = True
+#         else:
+#             flag = False
+#             break
+#     if flag:
+#         print(a)
+#################################2
+# def de(m,n):
+#     return m % n == 0
+# for a in range(1,500):
+#     flag = True
+#     for x in range(1,500):
+#         f = ((not(de(72,x))) or(not(de(120,x)))) or (a-x>100)
+#
+#         if f :
+#             pass
+#         else:
+#             flag = False
+#             break
+#     if flag:
+#         print(a)
+###############################3
+
+# counter = 0
+# for a in range(1,500):
+#     flag = True
+#     for x in range(1,500):
+#         for y in range(1,500):
+#             f = ((not(x<6)) or ((x**2)<a)) and (((not((y**2)<=a))) or (y<=6))
+#
+#             if f:
+#                 pass
+#             else:
+#                 flag = False
+#                 break
+#     if flag:
+#         print(a)
+#         counter +=1
+# print(counter)
+# ################################## 7
+# for a in range(1,5000):
+#     flag = True
+#     for x in range(500):
+#         for y in range(500):
+#             f = ((y + 2*x) != 48) or (a<x) or (x<y)
+#
+#             if f == 1:
+#                 pass
+#             else:
+#                 flag = False
+#                 break
+#     if flag:
+#         print(a)
+#########################################9
+# counter = 0
+# for a in range(1,500):
+#     flag = True
+#     for x in range(500):
+#         for y in range(500):
+#             f = (not(x<a) or  (x**2 <81)) and (not(y**2 <= 36) or (y<=a))
+#
+#             if f == 1:
+#                 pass
+#             else:
+#                 flag = False
+#                 break
+#     if flag:
+#         print(a)
+#         counter+=1
+# print(counter)
+#####################################################11
+# for a in range(500):
+#     flag = True
+#     for x in range(500):
+#         f  = (x&51 ==0) or ((not(x&41==0)) or (x&a == 0))
+#         if f:
+#             pass
+#         else:
+#             flag = False
+#     if flag:
+#         print(a)
+###################12
+for a in range(500):
+    flag = True
+    for x in range(500):
+        f  = (not(x&105 ==0)) or ((not(x&58!=0)) or (x&a != 0))
+        if f:
+            pass
+        else:
+            flag = False
+    if flag:
+        print(a)
+#######################13
+# for a in range(500):
+#     flag = True
+#     for x in range(500):
+#         f  = (x&a !=0)<=((x&10==0)<=(x&3!=0))
+#         if f:
+#             pass
+#         else:
+#             flag = False
+#     if flag:
+#         print(a)
+###############################14
+# for a in range(500):
+#     flag = True
+#     for x in range(500):
+#         f  = (x&17 ==0)<=((x&29!=0)<=(x&a!=0))
+#         if f:
+#             pass
+#         else:
+#             flag = False
+#     if flag:
+#         print(a)
+#
+########################### 5

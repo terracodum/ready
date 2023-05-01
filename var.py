@@ -167,3 +167,85 @@
 #
 # print(maxsum)
 #
+##########################################################1 15
+# for i in range(1, 100):
+#     s = bin(i)[2:]
+#     s = str(s)
+#     s = s[s.find('1'):]
+#     if s.count('1') > s.count('0'):
+#         s += '1'
+#     else:
+#         s += '0'
+#     result = int(s, 2)
+#     if result > 100:
+#         print(result)
+#         break
+############################
+# s = '1' * 82
+# while ('11111' in s) or ('888' in s):
+#     if '11111' in s:
+#         s = s.replace('11111', '88', 1)
+#     elif '888' in s:
+#         s = s.replace('888', '8', 1)
+# print(s)
+#############################
+# def F(n):
+#     if n == 1:
+#         return 1
+#     if n == 2:
+#         return 1
+#     if n > 2:
+#         return F(n - 2) * (n - 1)
+# print(F(7))
+############################
+# with open("C:\\Users\\nikit\\Downloads\\17 (3).txt") as file:
+#     array = [int(i) for i in file]
+# count = m = 0
+# for i in range(len(array) - 1):
+#     for j in range(i + 1, len(array)):
+#         if (array[i] + array[j]) % 10 == 0:
+#             count += 1
+#             m = max(m, array[i] + array[j])
+# print(count, m)
+###################################
+# def f(x, y):
+#     if x > y:
+#         return 0
+#     if x == y:
+#         return 1
+#     else:
+#         return f(x + 2, y) + f(x * 2, y)
+# print(f(1, 18) * f(18, 52))
+#######################################
+# with open("C:\\Users\\nikit\\Downloads\\24 (1).txt") as file:
+#
+#     st = file.readline()
+# k = 1
+# mx = 0
+# for i in range(1, len(st)):
+#     if (st[i] == 'K' and st[i-1] == 'L') or (st[i-1] == 'K' and st[i] == 'L'):
+#         k = 1
+#     else:
+#         k += 1
+#         if k > mx:
+#             mx = k
+# print(mx)
+########################################
+# def game(first,step):
+#     if first >=26 or step>4:
+#         return step == 2 or step == 4
+#     if step % 2 == 0:
+#         return all([game(first+1, step+1),game(first*2,step+1)])
+#     else:
+#         return any([game(first+1, step+1),game(first*2,step+1)])
+# for i in range(1,26):
+#     if game(i,0):
+#         print(i, end=" ")
+############################################
+# print("x y z w")
+# for x in range(0, 2):
+#     for y in range(0, 2):
+#         for z in range(0, 2):
+#             for w in range(0, 2):
+#                 if not((x == (not(y))) <= ((x and w) == (z and not(w)))):
+#                     print(x, y, z, w)
