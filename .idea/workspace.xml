@@ -22,15 +22,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d59d6370-3507-4de5-ba2e-23ae1f06811c" name="Default Changelist" comment="dodo">
-      <change afterPath="$PROJECT_DIR$/aslgo.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/turtle.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/№ 15.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dz.py" beforeDir="false" afterPath="$PROJECT_DIR$/dz.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lesson.py" beforeDir="false" afterPath="$PROJECT_DIR$/lesson.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/var.py" beforeDir="false" afterPath="$PROJECT_DIR$/var.py" afterDir="false" />
-    </list>
+    <list default="true" id="d59d6370-3507-4de5-ba2e-23ae1f06811c" name="Default Changelist" comment="fgf" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -317,7 +309,14 @@
       <option name="project" value="LOCAL" />
       <updated>1682233964248</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="fgf">
+      <created>1683126794496</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1683126794496</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -336,6 +335,7 @@
     <MESSAGE value="All that need&#10;&#10;thats all right" />
     <MESSAGE value="Update and rename test.py to high_and_low.py" />
     <MESSAGE value="dodo" />
-    <option name="LAST_COMMIT_MESSAGE" value="dodo" />
+    <MESSAGE value="fgf" />
+    <option name="LAST_COMMIT_MESSAGE" value="fgf" />
   </component>
 </project>
