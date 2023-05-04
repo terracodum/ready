@@ -117,18 +117,18 @@
 #     if flag:
 #         print(a)
 ## 9
-def de(m,n):
-    return m%n==0
-for a in range(1,500):
-    flag =  True
-    for x in range(1,500):
-        for y in range(1,500):
-            f = ((3*x + 4*y )!= 60) or ((a>=x)and(a>=y))
-            if f:
-                pass
-            else:
-                flag = False
-                break
-    if flag:
-        print(a)
-        break
+# def de(m,n):
+#     return m%n==0
+# for a in range(1,500):
+#     flag =  True
+#     for x in range(1,500):
+#         for y in range(1,500):
+#             f = ((3*x + 4*y )!= 60) or ((a>=x)and(a>=y))
+#             if f:
+#                 pass
+#             else:
+#                 flag = False
+#                 break
+#     if flag:
+#         print(a)
+#         break
