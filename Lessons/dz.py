@@ -865,16 +865,16 @@
 #     if flag:
 #         print(a)
 ###################12
-for a in range(500):
-    flag = True
-    for x in range(500):
-        f  = (not(x&105 ==0)) or ((not(x&58!=0)) or (x&a != 0))
-        if f:
-            pass
-        else:
-            flag = False
-    if flag:
-        print(a)
+# for a in range(500):
+#     flag = True
+#     for x in range(500):
+#         f  = (not(x&105 ==0)) or ((not(x&58!=0)) or (x&a != 0))
+#         if f:
+#             pass
+#         else:
+#             flag = False
+#     if flag:
+#         print(a)
 #######################13
 # for a in range(500):
 #     flag = True
@@ -899,3 +899,151 @@ for a in range(500):
 #         print(a)
 #
 ########################### 5
+####################################################################################
+## 1
+# with open("X:\\Github\\some_files\\adasf\\1.csv") as file:
+#     array = [i.rstrip().split(";") for i in file]
+# counter = 0
+# for i in range(len(array)):
+#     array[i] = sorted(list(map(int,array[i])))
+# print(array)
+# for k in range(len(array)):
+#     ars = array[k]
+#     if (ars[0]**2) + (ars[1]**2) == ars[2]**2:
+#         print(ars)
+#         counter +=1
+# print(counter)
+## 2
+# with open("X:\\Github\\some_files\\adasf\\2.csv") as file:
+#     array = [i.rstrip().split(";") for i in file]
+# counter = 0
+# for i in range(len(array)):
+#     array[i] = sorted(list(map(int,array[i])))
+# print(array)
+# for i in range(len(array)):
+#     ars = array[i]
+#     if (ars[0] + ars[4])**2 > ars[1]**2 +ars[2]**2 + ars[3]**2:
+#         counter+=1
+# print(counter)
+## 3
+# with open("X:\\Github\\some_files\\adasf\\3.csv") as file:
+#     array = [i.rstrip().split(";") for i in file]
+# counter = 0
+# for i in range(len(array)):
+#     array[i] = sorted(list(map(int,array[i])))
+#
+# for i in range(len(array)):
+#     ars = array[i]
+#     sum1 = ars[0] * ars[1] + ars[0]* ars[2]
+#     sum2 = ars[1] * ars[2]
+#     if ars[0] * ars[1] + ars[0]* ars[2] < ars[1] * ars[2]:
+#         counter+=1
+# print(counter)
+## 4
+# with open("X:\\Github\\some_files\\adasf\\4.csv") as file:
+#     array = [i.rstrip().split(";") for i in file]
+# counter = 0
+# for i in range(len(array)):
+#     array[i] = sorted(list(map(int,array[i])))
+# print(array)
+# for i in range(len(array)):
+#     if len(set(array[i])) == 5:
+#         num = sum(array[i]) - sum(list(set(array[i])))
+#         sr = (sum(list(set(array[i]))) - num)/4
+#         if sr <= num*2:
+#             counter+=1
+# print(counter)
+###########################
+## 5
+# with open("X:\\Github\\some_files\\adasf\\5.csv") as file:
+#     array = [i.rstrip().split(";") for i in file]
+#     for j in range(len(array)):
+#         array[j] = sorted(list(map(int,array[j])))
+#     print(array)
+# counter = 0
+# for i in range(len(array)):
+#     if len(set(array[i])) == 5:
+#         if 3*(array[i][0]+array[i][-1]) <= 2*(array[i][1]+array[i][2]+array[i][3]):
+#             counter+=1
+# print(counter)
+#  853
+## 6
+# with open("X:\\Github\\some_files\\adasf\\6.csv") as file:
+#     array = [i.rstrip().split(";") for i in file]
+#     for j in range(len(array)):
+#         array[j] = sorted(list(map(int,array[j])))
+#     print(array)
+# counter = 0
+# for i in range(len(array)):
+#     if array[i][0] +array[i][1] > array[i][-1]:
+#         counter += 1
+# print(counter)
+#  1842
+## 7
+# with open("X:\\Github\\some_files\\adasf\\7.txt") as file:
+#     array = file.read()
+# print(array)
+# cog = "CDF"
+# glas = "AO"
+# counter = 0
+# maxcount = 0
+# i = 1
+# while i != len(array)-1:
+#     if (array[i] in cog) and (array[i-1] in cog) and (array[i+1] in glas):
+#         i +=3
+#         counter +=1
+#         maxcount = max(maxcount,counter)
+#     else :
+#         i+=1
+#         maxcount = max(maxcount, counter)
+#         counter=0
+#
+# print(maxcount)
+# 6
+## 8
+# import string
+# sel = (string.ascii_uppercase)
+# with open("X:\\Github\\some_files\\adasf\\8.txt") as file:
+#     array = [i.rstrip() for i in file]
+# mincount = 1000000000
+# counter = 0
+# maxstr = []
+# for i in range(len(array)):
+#     counter = array[i].count("N")
+#     if counter < mincount:
+#         mincount = counter
+#         maxstr.clear()
+#         maxstr.append(array[i])
+#     elif counter == mincount:
+#         maxstr.append(array[i])
+#     if array[i].count("N") ==10:
+#         print("succses")
+# print(maxstr,mincount)
+# dictr = {}
+# for i in sel:
+#     dictr.setdefault(i,maxstr[0].count(i))
+# print(dictr)
+# "Y"
+## 9
+# with open("X:\\Github\\some_files\\adasf\\9.txt") as file:
+#     array = file.read
+# print(array)
+## 10
+# with open("X:\\Github\\some_files\\adasf\\10.txt") as file:
+#     array = [int(i) for i in file]
+# print(array)
+# count = []
+# for i in range(len(array)):
+#     if (array[i] // 100 == 0) and (array[i] // 10 > 0):
+#         count.append(array[i])
+# maxi = max(count)
+# counter = 0
+# maxsum = 0
+# for i in range(len(array) - 1):
+#     if ((9<array[i]<100) and (array[i + 1]<10 or array[i+1]>99) ) or ((9<array[i+1]<100) and (array[i]<10 or array[i]>99)):
+#         if (array[i] + array[i + 1]) % maxi == 0:
+#             counter +=1
+#             maxsum = max(maxsum, array[i] + array[i + 1])
+# print(counter,maxsum)
+# # 23
+
