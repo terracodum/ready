@@ -1,207 +1,171 @@
 ## 2
-# print("x y z w")
 # let = [0,1]
+# print("x y z w")
 # for x in let:
 #     for y in let:
 #         for z in let:
 #             for w in let:
-#                 f =(x and y) or (y == z) or w
-#                 if f == 0:
-#                     print(x, y, z, w)
+#                 f = (x and not(y)) or (y == z) or (not(w))
+#                 if f ==0:
+#                     print(x,y,z,w)
 ## 5
-# for i in range(100,1000):
-#     stri = str(i)
-#     n1 = int(stri[0]) + int(stri[1])
-#     n2 = int(stri[1]) + int(stri[2])
-#     res =  str(min(n1,n2))+ str(max(n1,n2))
-#
-#     if res == "1115":
-#         print(i)
-## 8
-# let = "АВС"
+# for n in range(10000):
+#     binn = bin(n)[2::]
+#     if n % 3 == 0:
+#         binn = binn + binn[-3::]
+#     else:
+#         binn = binn + str(bin((n % 3)*3)[2::])
+#     res = int(binn,2)
+#     if res <100:
+#         print(n)
+# 6
+# import turtle
+# turtle.speed(0)
+# turtle.left(90)
+# turtle.right(315)
+# k = 10
+# turtle.color("Black", "Green")
+# turtle.begin_fill()
+# for i in range(7):
+#     turtle.forward(16*k)
+#     turtle.right(45)
+#     turtle.forward(8*k)
+#     turtle.right(135)
+# turtle.end_fill()
+# turtle.up()
+# canvas = turtle.getcanvas()
 # counter = 0
-# lef = "АВСХ"
+# for i in range(-30 * k, 30 * k, k):
+#     for j in range(-30 * k, 30 * k, k):
+#         root = canvas.find_overlapping(i, j, i, j)
+#         print(root)
+#         if len(root) == 1 and root[0] == 5:
+#             counter += 1
+#
+# print(counter)
+# turtle.done()
+##8
+# let = "АВЛОР"
+# counter  = 0
 # for a in let:
 #     for b in let:
 #         for c in let:
 #             for d in let:
-#                 for e in lef:
-#                     string = a +b +c +d + e
-#                     if string.count("Х") <= 1:
-#                         counter+=1
+#                 f = a+b+c+d
+#                 counter+=1
+#                 if f[0] == "Л" :
+#                     print(counter)
+##9
+# with open("X:\\Github\\some_files\\demo\\09.csv") as file:
+#     array = [i.rstrip() for i in file]
+# ar = []
+# print(array)
+# for i in range(len(array)):
+#     array[i] = list(map(int,(array[i].split(";"))))
+# print(array)
+# counter  =0
+# for i in range(len(array)):
+#     array[i] = sorted(list(set(array[i])))
+#     if len(array[i]) == 5:
+#         if 3*(array[i][-1]+ array[i][0]) <= 2*(array[i][1]+array[i][2]+array[i][3]):
+#             counter+=1
 # print(counter)
-## 14
-# num = (4**16) + (2**36) - 8
-# bit = bin(num)[2::]
-#
-# print(bit.count("1"))
-## 16
-# def f(n):
-#     if n == 0:
-#         return 0
-#     if n>0 and n%2==0:
-#         return f(n/2)
-#     if n>0 and n%2 ==1:
-#         return 1 + f(n-1)
-# for i in range(10000000000):
-#     if f(i)==11:
+## 12
+# for i in range(4,100):
+#     string = "3" + "5"*i
+#     while "25" in string or "355" in string or "555"in string:
+#         if "25" in string:
+#             string = string.replace("25","3",1)
+#         if "355" in string:
+#             string = string.replace("355", "52",1)
+#         if "555" in string:
+#             string= string.replace("555","23",1)
+#     sum_str = 0
+#     for  j in range(len(string)):
+#         sum_str += int(string[j])
+#     if sum_str == 27:
 #         print(i)
+## 14
+# for x in "0123456789ABCDE":
+#     f = int("97968"+ str(x)+"13",15) + int("7"+str(x)+"213",15)
+#     if f % 14 ==0 :
+#         print(f//14)
+## 15
+# for a in range(500):
+#     flag = True
+#     for x in range(500):
+#         f = (x&39 ==0) or ((x&11 ==0) <= (not(x&a==0)))
+#         if f ==0 :
+#             flag = False
+#     if flag:
+#         print(a)
+##16
+# def f(n):
+#     if n >=2025:
+#         return n
+#     if n<2025:
+#         return n+3+f(n+3)
+# print(f(23) - f(21))
 ## 17
-# with open("C:\\Users\\nikit\\Downloads\\178343.txt") as file:
+# with open("X:\\Github\\some_files\\demo\\17_7596.txt") as file:
 #     array = [int(i) for i in file]
-# mie = 1000000000000000000
+# min_se = []
 # for j in range(len(array)):
-#     if len(str(array[j])) == 3 and array[j] % 10 == 5:
-#         mie = min(mie, array[j])
-# print(mie)
-# arrays = []
-# for k in range(100,1000):
-#     arrays.append(k)
-# print(arrays)
-#
-# minsum = 10000000000000000000000
-# counter = 0
-# for i in range(len(array) - 1):
-#     if (array[i] in arrays and array[i+1] not in arrays) or (array[i] not in arrays and array[i+1] in arrays):
-#         if (array[i] + array[i + 1]) % mie == 0:
-#             counter += 1
-#             minsum = min(minsum, array[i] + array[i + 1])
-# print(counter, minsum)
-## 19
-# def game(first, step):
-#     if step > 2 or first >= 74:
+#     if len(str(array[j])) == 3:
+#         if str(array[j])[-1] =="5":
+#             min_se.append(array[j])
+# min_sum = min(min_se)
+# counter  =0
+# min_s = 0
+# for i in range(len(array)-1):
+#     if (len(str(array[i]))==3 and len(str(array[i+1]))!=3) or (len(str(array[i]))!=3 and len(str(array[i+1]))==3):
+#         if (array[i] + array[i+1]) % min_sum == 0:
+#             counter+=1
+#             min_s =max(min_sum, array[i] + array[i+1])
+# print(counter,min_s)
+# 19 20 21
+# def game(first,step):
+#     if first >= 78 or step > 2:
 #         return step == 2
 #     if step % 2 == 0:
-#         return any([game(first + 1, step + 1), game(first + 2, step + 1), game(first * 3, step + 1)])
+#         return all([game(first+1,step+1), game(first+4,step+1), game(first*4,step+1)])
 #     else:
-#         return any([game(first + 1, step + 1), game(first + 2, step + 1), game(first * 3, step + 1)])
-# for i in range(1,74):
-#     if game(i,0):
-#         print(i)
-## 20
-# def game(first, step):
-#     if step > 3 or first >= 74:
-#         return step == 3
-#     if step % 2 == 0:
-#         return any([game(first + 1, step + 1), game(first + 2, step + 1), game(first * 3, step + 1)])
-#     else:
-#         return all([game(first + 1, step + 1), game(first + 2, step + 1), game(first * 3, step + 1)])
-# for i in range(1,74):
-#     if game(i,0):
-#         print(i)
-## 21
-
-# def game(first, step):
-#     if step > 4 or first >= 74:
-#         return step == 2 or step==4
-#     if step % 2 == 0:
-#         return all([game(first + 1, step + 1), game(first + 2, step + 1), game(first * 3, step + 1)])
-#     else:
-#         return any([game(first + 1, step + 1), game(first + 2, step + 1), game(first * 3, step + 1)])
-# for i in range(1,74):
+#         return any([game(first+1,step+1), game(first+4,step+1), game(first*4,step+1)])
+# for i in range(1,78):
 #     if game(i,0):
 #         print(i)
 ## 23
-# def f(x,y):
-#     if x> y or x== 18:
+# def f(a,b):
+#     if a > b or a == 13:
 #         return 0
-#     if x == y:
+#     if a == b :
 #         return 1
 #     else:
-#         return f(x+1,y)+f(x*2,y)
-# print(f(1,10)*f(10,21))
-# 25
-# def dels(n):
-#     array = []
-#     for i in range(1,int(n**0.5)+1):
-#         if n%i ==0:
-#             array.append(i)
-#             array.append(n//i)
-#     return array
-# maxlen = 0
-# maxs = 0
-# for i in range(120115,120201):
-#     ars = sorted(dels(i))
-#     maxlen = max(maxlen,len(ars))
-#     if maxlen == len(ars):
-#         maxs = i
-# print(maxlen,maxs)
+#         return f(a+1,b) + f(a+2,b) + f(a*3,b)
+# print(f(3,8)*f(8,18))
 ## 24
-# with open("C:\\Users\\nikit\\Downloads\\24_demo.txt") as file:
+# with open("X:\\Github\\some_files\\demo\\24_7600.txt") as file:
 #     array = file.read()
+# print(array)
 # counter = 1
-# maxcount = 0
-# for i in range(len(array)-1):
-#     if array[i] != array[i+1]:
-#         counter+=1
-#     else:
-#         maxcount = max(maxcount,counter)
+# max_count = 0
+# for i in range(1,len(array)):
+#     if array[i] in "QRS" and array[i-1] in "QRS":
+#         max_count = max(max_count,counter)
 #         counter=1
-# maxcount = max(maxcount,counter)
-#
-# print(maxcount)#######
-##########################
-## 2
-# let = [0,1]
-# print("x y z w")
-# for x in let:
-#     for y in let:
-#         for z in let:
-#             for w in let:
-#                 f = (x and (not(y))) or (x == z) or (not(w))
-#                 if f ==0:
-#                     print(x, y, z, w)
-## 5
-# for n in range(1000):
-#     binn = bin(n)[2::]
-#     if n%2 == 0:
-#         binn+= "10"
 #     else:
-#         binn+="01"
-#     res= int(binn,2)
-#     if res <= 102:
-#         print(n , res)
-## 8
-# sog = "ГД"
-# glas = "О"
-# all = "ГДО"
-# counter = 0
-# for a in sog:
-#     for b in all:
-#         for c in all:
-#             for d in all:
-#                 for e in all:
-#                     for f in sog:
-#                         f = a+ b +c + d + e+ f
-#                         counter +=1
-# print(counter)
-## 12
-# string = "1" + "0"*80
-# while ("10" in string) or ("1" in string):
-#     if "10" in string:
-#         string.replace("10","001",1)
-#     elif "1" in string:
-#         string.replace("1","000")
-# print(string.count("0"))
-# s = '1' + '0' * 80
-# while ('10' in s) or ('1' in s):
-#     if '10' in s:
-#         s = s.replace('10', '001', 1)
-#     elif '1' in s:
-#         s = s.replace('1', '000')
-# print(s.count('0'))
-def f(x):
-    k=2
-    deliteli=set()
-    while k * k <= x:
-        if x % k==0:
-            deliteli.add(k)
-            if x // k < x:
-                deliteli.add(x // k)
-        k = k + 1
-    return sorted(deliteli)
-start = 174457
-end = 174505
-for i in range(start, end + 1):
-    if len(f(i)) == 2:
-        print(f(i))
+#         counter+=1
+#         max_count = max(max_count,counter)
+# print(max_count)
+## 25
+# for x in range(10):
+#     for z in range(10):
+#         for y in range(10):
+#             num = int("12" + str(x) + str(z) + "36" + str(y) + "1")
+#             if num % 273 == 0:
+#                 print(num, num // 273)
+# for x in range(10):
+#     for z in range(10):
+#         num = int("12" + str(x) + str(z) + "36" + "1")
+#         if num % 273 == 0:
+#             print(num, num // 273)
