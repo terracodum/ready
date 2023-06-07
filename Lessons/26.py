@@ -218,80 +218,29 @@
 #     count.append(counter)
 # print(len(count),max(count))
 import operator
+
 with open("X:\\Github\\some_files\\26_1\\2.txt") as file:
     serv = file.readline()
-    array = [list(map(int,(i.split()))) for i in file]
-
+    array = [list(map(int, (i.split()))) for i in file]
 array.sort(key=operator.itemgetter(0))
-
-
 min_place = []
 take_array = []
 for i in range(len(array)):
+    take_array.clear()
     tap = array[i][0]
     for j in range(len((array))):
         if array[j][0] == tap:
             take_array.append(array[j])
-    for k in range(len(take_array)-1):
-        if take_array[k+1][1] - take_array[k][1]== 14:
-            # if take_array[-1][1] > take_array[k+1][1] and take_array[0][1] < take_array[k][1]:
-            min_place.append(take_array[k])
+    take_array.sort(key=operator.itemgetter(1))
+    for k in range(len(take_array) - 1):
+        if take_array[k + 1][1] - take_array[k][1] == 14:
+            if take_array[-1][1] > take_array[k + 1][1] and take_array[0][1] < take_array[k][1]:
+                min_place.append(take_array[k])
 min_place.sort(key=operator.itemgetter(0))
 print(min_place)
 lines = min_place[-1][0]
-res =min_place[-1][1]
-print(lines,res)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+res = min_place[-1][1] + 1
+print(lines, res)
 
 # for k in range(len(array)):
 #     counter =0
