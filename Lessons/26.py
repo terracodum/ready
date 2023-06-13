@@ -192,7 +192,7 @@
 # print(stert,last)
 ## 1612 90
 #################### 25.05.23 ###########
-## 1
+# ## 1
 # with open("X:\\Github\\some_files\\26_1\\1.txt") as file:
 #     serv = file.readline()
 #     array = [int(i) for i in file]
@@ -217,30 +217,31 @@
 #     pop_set.clear()
 #     count.append(counter)
 # print(len(count),max(count))
-import operator
-
-with open("X:\\Github\\some_files\\26_1\\2.txt") as file:
-    serv = file.readline()
-    array = [list(map(int, (i.split()))) for i in file]
-array.sort(key=operator.itemgetter(0))
-min_place = []
-take_array = []
-for i in range(len(array)):
-    take_array.clear()
-    tap = array[i][0]
-    for j in range(len((array))):
-        if array[j][0] == tap:
-            take_array.append(array[j])
-    take_array.sort(key=operator.itemgetter(1))
-    for k in range(len(take_array) - 1):
-        if take_array[k + 1][1] - take_array[k][1] == 14:
-            if take_array[-1][1] > take_array[k + 1][1] and take_array[0][1] < take_array[k][1]:
-                min_place.append(take_array[k])
-min_place.sort(key=operator.itemgetter(0))
-print(min_place)
-lines = min_place[-1][0]
-res = min_place[-1][1] + 1
-print(lines, res)
+##
+# import operator
+#
+# with open("X:\\Github\\some_files\\26_1\\2.txt") as file:
+#     serv = file.readline()
+#     array = [list(map(int, (i.split()))) for i in file]
+# array.sort(key=operator.itemgetter(0))
+# min_place = []
+# take_array = []
+# for i in range(len(array)):
+#     take_array.clear()
+#     tap = array[i][0]
+#     for j in range(len((array))):
+#         if array[j][0] == tap:
+#             take_array.append(array[j])
+#     take_array.sort(key=operator.itemgetter(1))
+#     for k in range(len(take_array) - 1):
+#         if take_array[k + 1][1] - take_array[k][1] == 14:
+#             if take_array[-1][1] > take_array[k + 1][1] and take_array[0][1] < take_array[k][1]:
+#                 min_place.append(take_array[k])
+# min_place.sort(key=operator.itemgetter(0))
+# print(min_place)
+# lines = min_place[-1][0]
+# res = min_place[-1][1] + 1
+# print(lines, res)
 
 # for k in range(len(array)):
 #     counter =0
@@ -264,4 +265,40 @@ print(lines, res)
 #     pop_set.clear()
 # print(count,last_ar)
 # ##1766
-## 2
+#### 3
+with open("X:\\Github\\some_files\\26_1\\3.txt") as file:
+    serv = int(file.readline())
+    array = [int(i) for i in file]
+even = []
+odd = []
+for i in range(len(array)):
+    if array[i] % 2 == 0:
+        even.append(array[i])
+    elif array[i] % 2 == 1:
+        odd.append(array[i])
+max_sum = 0
+counter = 0
+lists = [odd, even]
+for k in lists:
+    for i in range(len(k)):
+        for j in range(i + 1, len(k)):
+            if (k[i] + k[j]) in even:
+                counter += 1
+                max_sum = max(max_sum, k[i] + k[j])
+print(counter, max_sum)
+## 10 933100556
+
+#### 4
+# with open("X:\\Github\\some_files\\26_1\\4.txt") as file:
+#     serv = int(file.readline())
+#     array = [int(i) for i in file]
+# array.sort()
+# sell_array = [i for i in array if i > 50]
+# # bill = len(sell_array)
+# low_array = [i for i in array if i <= 50]
+# high_array = sell_array[int((len(sell_array))/2)::]
+# sell_array = sell_array[:int((len(sell_array))/2):]
+# bill = sum(low_array) + round((sum(sell_array))*0.75) + sum(high_array)
+# print(sell_array[-1])
+# print(bill)
+## 469784 511
