@@ -5,7 +5,6 @@
 #         num1 += bus_stops[i][0]
 #         num2 += bus_stops[i][1]
 #     return num1 - num2
-\
 
 class Solution(object):
     def runningSum(nums):
