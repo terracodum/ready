@@ -215,15 +215,15 @@
 
 #### 24
 # # print(array)
-with open("X:\\Github\\some_files\\navar\\24_7624.txt") as f:
-    array = f.read()
-array = array.replace("X","*")
-array = array.replace("Y","*")
-array = array.replace("Z","*")
-array = array.replace("**", "* *")
-array = array.split()
-arrays = list(map(len,array))
-print((sorted(arrays))[-1])
+# with open("X:\\Github\\some_files\\navar\\24_7624.txt") as f:
+#     array = f.read()
+# array = array.replace("X","*")
+# array = array.replace("Y","*")
+# array = array.replace("Z","*")
+# array = array.replace("**", "* *")
+# array = array.split()
+# arrays = list(map(len,array))
+# print((sorted(arrays))[-1])
 
 
 ##111

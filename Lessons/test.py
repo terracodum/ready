@@ -149,6 +149,7 @@
 ## 18
 
 #### 11
+# string = ">" + "1" * 26 + "2" * 10 + "3" * 14
 
 ## no answer
 
@@ -193,7 +194,7 @@
 #     return sorted(list(set(res)))
 # res = []
 # j = 0
-# for i in range(200_000_000,200_000_000_000):
+# for i in range(200_000_001,200_000_000_000):
 #     if len(res) == 5:
 #         break
 #     rel = dels(i)
@@ -244,14 +245,21 @@
 #     count = 0
 #     for i in range(1, 1 + int(n ** 0.5)):
 #         if n % i == 0:
-#             if i % 2 == 1:
-#                 count += 1
-#             if (n//i)%2==1:
-#                 count +=1
-#         if count >5:
+#             if i == n // i:
+#                 if i % 2 == 1:
+#                     count += 1
+#             else:
+#                 if i % 2 == 1:
+#                     count += 1
+#                 if (n // i) % 2 == 1:
+#                     count += 1
+#         if count > 5:
 #             return False
 #     if count == 5:
 #         return True
+#     else:
+#         return False
+#
 # res = []
 # for i in range(45_000_000, 50_000_001):
 #
@@ -259,3 +267,9 @@
 #         res.append(i)
 #         print(res)
 ## не свезло
+# povt = [3,5,2,6,3,8,8,8,9]
+# print(povt.count(8))
+class Solution(object):
+    def runningSum(self, nums):
+      return sum(nums)
+    print(runningSum(1,[1,2,3,4]))
